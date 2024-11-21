@@ -28,7 +28,6 @@ Hauptsprache ist Chinesisch und die Metasprache (Navigationssprache) ist Englisc
 - keine Google Fonts -> nur Fonts, die lokal als Textdatei benutzbar sind
   - chinesischer Font muss so viel Zeichen wie möglich beinhalten (schönere Fonts haben wahrscheinlich eher weniger Zeichen)
   - Unicode CJK (hintere Blöcke sind exotischer)
-  - 
 
 
 ## Verfahrensweise - Welche Arbeitsschritte sind geplant?
