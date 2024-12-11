@@ -35,11 +35,12 @@ Hauptsprache ist Chinesisch und die Metasprache (Navigationssprache) ist Englisc
 1. Excel in JSON konvertieren
 2. Webseite mit Haupttext erstellen
 3. Webseite für Glossare erstellen
-4. Glossar-Einträge erstellen
-5. Verlinkung zwischen Haupttext und Glossar-Einträge erstellen
+4. Navigationsmöglichkeiten zwischen den verschiedenen Seiten erstellen
+5. Glossar-Einträge erstellen
+6. Verlinkung zwischen Haupttext und Glossar-Einträge erstellen
 
 ## Arbeitsteilung - Wer übernimmt welchen Part?
 
-Die grobe Webseite (Schritte 2 und 3) wird von Yajie übernommen.
+Die grobe Webseite (Schritte 2 bis 4) wird von Yajie übernommen.
 Das Konvertieren der Excel in JSON (Schritt 1) wird von Emanuel übernommen.
-Die Erstellung (Schritt 4) und Verlinkung (Schritt 5) der Glossar-Einträge werden aufgeteilt.
+Die Erstellung (Schritt 5) und Verlinkung (Schritt 6) der Glossar-Einträge werden aufgeteilt.
