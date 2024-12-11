@@ -40,6 +40,6 @@ Hauptsprache ist Chinesisch und die Metasprache (Navigationssprache) ist Englisc
 
 ## Arbeitsteilung - Wer übernimmt welchen Part?
 
-
-
- 
+Die grobe Webseite (Schritte 2 und 3) wird von Yajie übernommen.
+Das Konvertieren der Excel in JSON (Schritt 1) wird von Emanuel übernommen.
+Die Erstellung (Schritt 4) und Verlinkung (Schritt 5) der Glossar-Einträge werden aufgeteilt.
