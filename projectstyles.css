@@ -1,0 +1,161 @@
+body, h1, h2, p, ul, li, a, blockquote {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    background-color: #f4f7fc; /* Weiches, helles Grau */
+    color: #333;
+    padding-top: 40px; /* Platz für die fixierte Navigation */
+}
+nav {
+    background-color: #004d61;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3498db; /* Sanftes Blau für Hover-Effekte */
+    transform: translateX(5px);
+}
+
+/* Content styling */
+.content {
+    margin-left: 270px; /* Platz für Navigation */
+    padding: 40px 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+/* Content styling */
+.content {
+    margin-left: 270px; /* Platz für Navigation */
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 18px;
+    color: #dfe6e9;
+    margin-top: 10px;
+}
+
+/* Section styling */
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.8; /* Für bessere Lesbarkeit */
+    max-width: 900px; /* Breiterer Inhalt */
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2980b9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify; /* Gleichmäßige Textverteilung */
+}
+
+/* Styling für Links innerhalb des Textes */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Add smooth animations */
+a:hover, button:hover {
+    transition: all 0.3s ease-in-out;
+}
+

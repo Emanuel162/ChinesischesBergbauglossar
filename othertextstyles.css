@@ -1,0 +1,119 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background for better readability */
+    color: #333;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #004d61;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3498db; /* Sanftes Blau für Hover-Effekte */
+    transform: translateX(5px);
+}
+
+/* Main content styles */
+main {
+    margin-left: 250px; /* Adjusted to match nav width */
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fdfdfd; /* Subtle light background for the table */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table thead th {
+    background-color: #2c3e50; /* Dodger blue for table header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+table thead th[colspan="6"] {
+    text-align: center;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f0f8ff; /* Light blue for even rows */
+}
+
+table tbody tr:hover {
+    background-color: #e6f7ff; /* Highlight on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    table thead th, table tbody td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
