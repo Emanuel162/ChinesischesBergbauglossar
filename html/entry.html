@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary Entry</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.4em;
+            color: #34495e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .entry-details {
+            margin-top: 20px;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .detail span:first-child {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+
+        .detail span:last-child {
+            color: #2c3e50;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 id="entry-name">Loading...</h1>
+    <div class="entry-details">
+        <div class="detail"><span>Count:</span> <span id="entry-count">N/A</span></div>
+        <div class="detail"><span>Frequency:</span> <span id="entry-frequency">N/A</span></div>
+        <div class="detail"><span>Pinyin:</span> <span id="entry-pinyin">N/A</span></div>
+        <div class="detail"><span>Hanzi:</span> <span id="entry-hanzi">N/A</span></div>
+        <div class="detail"><span>Translation:</span> <span id="entry-translation">N/A</span></div>
+        <div class="detail"><span>Definition 1:</span> <span id="entry-def1">N/A</span></div>
+        <div class="detail"><span>Definition 2:</span> <span id="entry-def2">N/A</span></div>
+    </div>
+    <a href="glossary.html" class="back-link">Back to Glossary</a>
+</div>
+
+<script src="../js/data.js"></script>
+<script>
+    // Get query parameter 'id' from URL
+    const params = new URLSearchParams(window.location.search);
+    const entryId = params.get('id');
+
+    // Find the entry with the matching id
+    const entry = data.find(item => item.id === entryId);
+
+    if (entry) {
+        document.getElementById('entry-name').textContent = entry.name;
+        document.getElementById('entry-count').textContent = entry.count || "N/A";
+        document.getElementById('entry-frequency').textContent = entry.frequency || "N/A";
+        document.getElementById('entry-pinyin').textContent = entry.pinyin || "N/A";
+        document.getElementById('entry-hanzi').textContent = entry.hanzi || "N/A";
+        document.getElementById('entry-translation').textContent = entry.translation || "N/A";
+        document.getElementById('entry-def1').textContent = entry.def1 || "N/A";
+        document.getElementById('entry-def2').textContent = entry.def2 || "N/A";
+    } else {
+        document.querySelector('.container').innerHTML = `
+                <h1>Entry Not Found</h1>
+                <p>The glossary entry you are looking for does not exist or may have been removed.</p>
+                <a href="glossary.html" class="back-link">Back to Glossary</a>
+            `;
+    }
+</script>
+</body>
+</html>
