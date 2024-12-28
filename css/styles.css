@@ -38,3 +38,31 @@ a:hover {
 p {
     line-height: 1.8em;
 }
+
+#navbar {
+    background-color: #004d61;
+    padding: 20px;
+    white-space: nowrap; /* Prevents content from wrapping */
+    text-align: center;
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 20px 0;
+
+            a {
+                color: #ecf0f1;
+                font-size: 18px;
+                display: block;
+                padding: 10px 20px;
+            }
+
+            a:hover {
+                background-color: #3498db;
+                transform: translateX(5px);
+                border-radius: 5px;
+            }
+        }
+    }
+}
