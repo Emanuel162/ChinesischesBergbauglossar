@@ -1,34 +1,29 @@
 /* Navigation Bar */
-nav {
+#navbar {
     background-color: #004d61;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 220px;
-    z-index: 1000;
+    padding: 20px;
+    white-space: nowrap; /* Prevents content from wrapping */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-nav h2 {
+#navbar h2 {
     color: #ecf0f1;
     margin-bottom: 20px;
     font-size: 22px;
 }
 
-nav ul {
+#navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+#navbar ul li {
     margin: 20px 0;
 }
 
-nav ul li a {
+#navbar ul li a {
     text-decoration: none;
     color: #ecf0f1;
     font-size: 18px;
@@ -38,7 +33,7 @@ nav ul li a {
     transition: background-color 0.3s, transform 0.3s ease;
 }
 
-nav ul li a:hover {
+#navbar ul li a:hover {
     background-color: #3498db;
     transform: translateX(5px);
 }

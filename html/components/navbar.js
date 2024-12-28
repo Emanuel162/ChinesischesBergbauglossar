@@ -1,7 +1,7 @@
 const loadNavbar = () => {
     const navbarContainer = document.getElementById('navbar');
     if (navbarContainer) {
-        fetch('./components/navbar-template.html') // Fetch the external file
+        fetch('./components/navbar.html') // Fetch the external file
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
