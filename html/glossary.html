@@ -28,15 +28,33 @@
         button.classList.add('button');
         button.id = entry.id;
 
+        //Create always-visible entry overview div
         const divWithGeneralInformation = document.createElement('div');
         divWithGeneralInformation.classList.add('general-information')
-        //TODO: in eigene html Elemente auftrennen
-        divWithGeneralInformation.innerText = `${entry.Pinyin} | ${entry.Hanzi} | ${entry.translation}`
-        button.appendChild(divWithGeneralInformation);
 
+        //Create spans for Pinyin, Hanzi and Translation
+        const spanPinyin = document.createElement('span');
+        spanPinyin.classList.add('span-pinyin')
+        spanPinyin.innerText = entry.Pinyin;
+
+        const spanHanzi = document.createElement('span');
+        spanHanzi.classList.add('span-hanzi');
+        spanHanzi.innerText = entry.Hanzi;
+
+        const spanTranslation = document.createElement('span');
+        spanTranslation.classList.add('span-translation');
+        spanTranslation.innerText = entry.translation;
+
+        //Add spans to the entry overview div
+        divWithGeneralInformation.appendChild(spanPinyin);
+        divWithGeneralInformation.appendChild(spanHanzi);
+        divWithGeneralInformation.appendChild(spanTranslation);
+
+        //Create hidden div
         const divForHiddenContent = document.createElement('div');
         divForHiddenContent.classList.add('hidden-information')
 
+        button.appendChild(divWithGeneralInformation);
         button.appendChild(divForHiddenContent);
         listItem.appendChild(button);
         list.appendChild(listItem);

@@ -20,6 +20,7 @@ button {
 .general-information {
     cursor: pointer;
     padding: 0.5rem 0.5rem;
+    font-size: 1rem;
 }
 
 .general-information:hover {
@@ -28,7 +29,15 @@ button {
 }
 
 .hidden-information {
-    padding-top: 0.25rem;
     padding-left: 1rem;
     text-align: left;
+}
+
+.span-hanzi {
+    padding: 0 0.75rem;
+    font-size: larger;
+}
+
+.span-translation {
+    font-size: smaller;
 }
