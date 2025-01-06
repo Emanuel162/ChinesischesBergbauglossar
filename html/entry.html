@@ -34,11 +34,11 @@
         document.getElementById('entry-name').textContent = entry.name;
         document.getElementById('entry-count').textContent = entry.count || "N/A";
         document.getElementById('entry-frequency').textContent = entry.frequency || "N/A";
-        document.getElementById('entry-pinyin').textContent = entry.pinyin || "N/A";
-        document.getElementById('entry-hanzi').textContent = entry.hanzi || "N/A";
+        document.getElementById('entry-pinyin').textContent = entry.Pinyin || "N/A";
+        document.getElementById('entry-hanzi').textContent = entry.Hanzi || "N/A";
         document.getElementById('entry-translation').textContent = entry.translation || "N/A";
-        document.getElementById('entry-def1').textContent = entry.def1 || "N/A";
-        document.getElementById('entry-def2').textContent = entry.def2 || "N/A";
+        document.getElementById('entry-def1').textContent = entry.def_1 || "N/A";
+        document.getElementById('entry-def2').textContent = entry.def_2 || "N/A";
     } else {
         document.querySelector('.container').innerHTML = `
                 <h1>Entry Not Found</h1>

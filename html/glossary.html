@@ -18,12 +18,27 @@
 </div>
 
 <script src="../js/data.js"></script>
+<script src="../js/glossary.js"></script>
 <script>
-    // Populate the glossary list
+    // Create the glossary list from the given data in data.js
     const list = document.getElementById('glossary-list');
     data.forEach(entry => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<a href="entry.html?id=${entry.id}">${entry.Pinyin}</a>`;
+        const button = document.createElement('button');
+        button.classList.add('button');
+        button.id = entry.id;
+
+        const divWithGeneralInformation = document.createElement('div');
+        divWithGeneralInformation.classList.add('general-information')
+        //TODO: in eigene html Elemente auftrennen
+        divWithGeneralInformation.innerText = `${entry.Pinyin} | ${entry.Hanzi} | ${entry.translation}`
+        button.appendChild(divWithGeneralInformation);
+
+        const divForHiddenContent = document.createElement('div');
+        divForHiddenContent.classList.add('hidden-information')
+
+        button.appendChild(divForHiddenContent);
+        listItem.appendChild(button);
         list.appendChild(listItem);
     });
 </script>

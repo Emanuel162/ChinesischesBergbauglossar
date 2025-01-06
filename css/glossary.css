@@ -10,3 +10,25 @@ ul {
 li {
     margin: 10px 0;
 }
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: inherit;
+}
+
+.general-information {
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+}
+
+.general-information:hover {
+    border-radius: 0.625rem;
+    background-color: #dae8e8;
+}
+
+.hidden-information {
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    text-align: left;
+}
