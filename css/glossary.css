@@ -15,12 +15,14 @@ button {
     border: none;
     border-radius: 5px;
     background-color: inherit;
+    max-width: 50%;
 }
 
 .general-information {
     cursor: pointer;
     padding: 0.5rem 0.5rem;
     font-size: 1rem;
+    text-align: left;
 }
 
 .general-information:hover {
@@ -39,6 +41,56 @@ button {
     font-size: larger;
 }
 
-.span-translation {
-    font-size: smaller;
+.notes {
+    padding-bottom: 0.5rem;
+}
+
+.first-info {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.type, .field {
+    padding-right: 0.5rem;
+}
+
+.error {
+    padding-left: 1rem;
+    color: red;
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    padding-right: 0.5rem;
+    max-width: 40%;
+    font-size: 0.9rem;
+}
+
+.right {
+    padding-left: 0.5rem;
+    max-width: 65%;
+}
+
+.notes {
+    font-size: 0.9rem;
+}
+
+.definitions, .occurences {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.occurences {
+    display: block;
+    line-height: 1.8rem;
+}
+
+#definitionHeadline, #occurenceHeadline {
+    padding-bottom: 0.5rem;
 }

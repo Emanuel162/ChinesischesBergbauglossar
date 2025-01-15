@@ -24,9 +24,9 @@
     const list = document.getElementById('glossary-list');
     data.forEach(entry => {
         const listItem = document.createElement('li');
+        listItem.id = entry.id;
         const button = document.createElement('button');
         button.classList.add('button');
-        button.id = entry.id;
 
         //Create always-visible entry overview div
         const divWithGeneralInformation = document.createElement('div');
@@ -35,14 +35,17 @@
         //Create spans for Pinyin, Hanzi and Translation
         const spanPinyin = document.createElement('span');
         spanPinyin.classList.add('span-pinyin')
+        spanPinyin.classList.add(entry.id)
         spanPinyin.innerText = entry.Pinyin;
 
         const spanHanzi = document.createElement('span');
         spanHanzi.classList.add('span-hanzi');
+        spanHanzi.classList.add(entry.id)
         spanHanzi.innerText = entry.Hanzi;
 
         const spanTranslation = document.createElement('span');
         spanTranslation.classList.add('span-translation');
+        spanTranslation.classList.add(entry.id)
         spanTranslation.innerText = entry.Translation;
 
         //Add spans to the entry overview div
@@ -55,8 +58,8 @@
         divForHiddenContent.classList.add('hidden-information')
 
         button.appendChild(divWithGeneralInformation);
-        button.appendChild(divForHiddenContent);
         listItem.appendChild(button);
+        listItem.appendChild(divForHiddenContent);
         list.appendChild(listItem);
     });
 </script>
