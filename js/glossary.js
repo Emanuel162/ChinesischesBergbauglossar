@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    /* Doesn't work as expected. Should open an entry from a text.
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('id')) {
+        const glossaryEntry = document.getElementById(params.get('id'));
+        const entryButton = glossaryEntry.querySelector('button');
+        //somehow this button is there, but has no action, so the glossary entry doesn't open
+        entryButton.click();
+        return;
+    }*/
+
     const buttons = Array.from(document.getElementsByClassName('button'));
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
