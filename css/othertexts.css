@@ -22,6 +22,7 @@ table {
             padding: 10px;
             border: 1px solid #ddd;
             vertical-align: top;
+            line-height: 1.8rem;
         }
 
         tr:nth-child(even) {
